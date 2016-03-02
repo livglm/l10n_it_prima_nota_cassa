@@ -34,11 +34,9 @@
             <field name="target">new</field>
         </record>
 
-        <menuitem
-            name="Prima Nota Cassa"
-            parent="account.menu_journals_report"
-            action="action_account_prima_nota_cassa"
-            id="menu_print_prima_nota_cassa"
-           />
+        <menuitem id="menu_print_prima_nota_cassa" name="Prima Nota" parent="account.menu_finance_legal_statement"/>
+        <menuitem name="Prima Nota Cassa" parent="menu_print_prima_nota_cassa" action="ction_account_prima_nota_cassa" id="menu_prima_nota" icon="STOCK_PRINT"/>
+
+
 </data>
 </openerp>
